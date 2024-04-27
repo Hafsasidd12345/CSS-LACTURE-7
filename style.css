@@ -1,0 +1,33 @@
+.box1 {
+    background-color: deeppink;
+}
+
+.container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background: linear-gradient(45deg, red, blue, pink, deeppink, purple, black);
+    padding: 50px;
+    border-radius: 10px;
+    color: black;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .box1 {
+        background-color: purple;
+        color: white;
+        padding: 10px;
+    }
+    .container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto; /* Adjust columns for smaller screens */
+    }
+}
